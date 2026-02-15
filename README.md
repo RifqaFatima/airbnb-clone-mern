@@ -1,6 +1,10 @@
 # 🏠 Airbnb Clone - MERN Stack
 
-A full-stack web application inspired by Airbnb, built using Node.js, Express, MongoDB, and EJS templating. This project replicates core Airbnb functionality including property listings, user authentication, reviews, and interactive maps.
+A full-stack web application inspired by Airbnb, built using Node.js, Express, MongoDB, and EJS templating. This project replicates core Airbnb functionality including property listings, user authentication, reviews.
+The goal of this project was to implement a complete CRUD-based application with authentication, cloud image storage, and MVC architecture.
+
+## 🌍 Live Demo  
+🔗https://airbnb-clone-mern-05mt.onrender.com
 
 ## ✨ Features
 
@@ -8,9 +12,8 @@ A full-stack web application inspired by Airbnb, built using Node.js, Express, M
 - **Property Listings**: Browse, create, update, and delete accommodation listings
 - **Reviews & Ratings**: Users can leave reviews and ratings for properties
 - **Image Uploads**: Cloudinary integration for image storage and management
-- **Interactive Maps**: Location-based features for property discovery
 - **Responsive Design**: Mobile-friendly interface built with CSS
-- **Search & Filter**: Find properties based on various criteria
+
 - **CRUD Operations**: Full create, read, update, and delete functionality
 
 ## 🛠️ Tech Stack
@@ -32,6 +35,15 @@ A full-stack web application inspired by Airbnb, built using Node.js, Express, M
 - **Passport.js** - Authentication middleware (likely)
 - **Joi** - Schema validation
 - **Method Override** - HTTP verb support
+
+## 🏗️ Architecture
+
+### The project follows the MVC (Model-View-Controller) pattern:
+
+- Models: Mongoose schemas
+- Views: EJS templates
+- Controllers: Route handling logic
+- Middleware: Authentication and validation
 
 ## 📁 Project Structure
 
@@ -98,21 +110,14 @@ airbnb-clone-mern/
    
    Open your browser and navigate to `http://localhost:3000`
 
-## 📝 Usage
+## 🚀 Deployment
 
-### For Users
-1. **Sign Up / Login** - Create an account or log in to access full features
-2. **Browse Listings** - Explore available properties
-3. **View Details** - Click on a listing to see full details, location, and reviews
-4. **Leave Reviews** - Share your experience and rate properties
-5. **Manage Listings** (for hosts) - Create, edit, or delete your own listings
+### The application is deployed on Render.
 
-### For Developers
-- Routes are defined in the `routes/` directory
-- Database models are in the `models/` directory
-- Business logic is separated into `controllers/`
-- Validation schemas are in `schema.js`
-- Middleware functions are in `middleware.js`
+- Backend & Database hosted on Render
+- MongoDB Atlas for cloud database
+- Cloudinary for media storage
+
 
 ## 🔒 Environment Variables
 
@@ -133,15 +138,6 @@ The application uses the following main models:
 - **Listing** - Property listings with details
 - **Review** - User reviews and ratings
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📜 License
 
@@ -165,15 +161,11 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🔮 Future Enhancements
 
-- [ ] Advanced search and filtering options
+- [ ] Advanced search and filtering options: Find properties based on various criteria
+- [ ] Interactive Maps: Location-based features for property discovery
 - [ ] Booking system with calendar integration
 - [ ] Payment gateway integration
-- [ ] Real-time messaging between hosts and guests
-- [ ] Wishlists/Favorites functionality
 - [ ] Email notifications
-- [ ] Multi-language support
-- [ ] Mobile app (React Native)
 
----
 
-**Note**: This is a learning project and is not affiliated with Airbnb, Inc.
+
