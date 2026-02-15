@@ -3,8 +3,10 @@
 A full-stack web application inspired by Airbnb, built using Node.js, Express, MongoDB, and EJS templating. This project replicates core Airbnb functionality including property listings, user authentication, reviews.
 The goal of this project was to implement a complete CRUD-based application with authentication, cloud image storage, and MVC architecture.
 
+
 ## 🌍 Live Demo  
 🔗https://airbnb-clone-mern-05mt.onrender.com
+
 
 ## ✨ Features
 
@@ -16,6 +18,7 @@ The goal of this project was to implement a complete CRUD-based application with
 
 - **CRUD Operations**: Full create, read, update, and delete functionality
 
+  
 ## 🛠️ Tech Stack
 
 ### Backend
@@ -35,6 +38,7 @@ The goal of this project was to implement a complete CRUD-based application with
 - **Passport.js** - Authentication middleware (likely)
 - **Joi** - Schema validation
 - **Method Override** - HTTP verb support
+
 
 ## 🏗️ Architecture
 
@@ -62,6 +66,17 @@ airbnb-clone-mern/
 ├── app.js             # Main application file
 └── package.json       # Project dependencies
 ```
+
+## 📸 Screenshots
+
+<img width="1064" height="2058" alt="airbnb-clone-mern-05mt onrender com_listings" src="https://github.com/user-attachments/assets/ed00da74-46ca-4e41-9248-f52626f08b74" />
+
+<img width="1064" height="2603" alt="airbnb-clone-mern-05mt onrender com_listings_69915f3f22be36f77a858545" src="https://github.com/user-attachments/assets/5187d09c-9b0d-44ec-9e0b-859b81e534b0" />
+
+<img width="1064" height="1029" alt="airbnb-clone-mern-05mt onrender com_listings_new" src="https://github.com/user-attachments/assets/b0748b0b-a486-4885-8b4a-b1f09520f97d" />
+
+<img width="1083" height="911" alt="airbnb-clone-mern-05mt onrender com_signup" src="https://github.com/user-attachments/assets/8da9ac27-f59d-418c-b97f-ea537ab01cb4" />
+
 
 ## 🚀 Getting Started
 
