@@ -27,7 +27,10 @@ router
   
 //NEW ROUTE
 router.get("/new", isLoggedIn, wrapAsync(listingController.renderNewForm));
-
+router.get("/api/listings", async (req, res) => {
+    const listings = await Listing.find({});
+    res.json(listings);
+});
 router
   .route("/:id")
   //SHOW ROUTE
