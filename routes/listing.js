@@ -27,9 +27,19 @@ router
   
 //NEW ROUTE
 router.get("/new", isLoggedIn, wrapAsync(listingController.renderNewForm));
+
 router.get("/api/listings", async (req, res) => {
-    const listings = await Listing.find({});
-    res.json(listings);
+   try {
+        // We select only the essential fields Gemini needs to match user requests
+        const listings = await Listing.find({})
+            .select("title description price location country")
+            .lean(); // .lean() makes the query faster by returning plain JS objects instead of full Mongoose documents
+        
+        res.status(200).json(listings);
+    } catch (error) {
+        console.error("Error fetching listings for AI:", error);
+        res.status(500).json({ error: "Failed to fetch listings" });
+    }
 });
 router
   .route("/:id")
